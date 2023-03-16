@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a1"
+    tools:context=".penjelasan">
+
+    <TextView
+        android:id="@+id/isi3"
+        android:layout_width="260dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/isi2"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_dark" />
+
+    <ImageView
+        android:id="@+id/iv_flag"
+        android:layout_width="300dp"
+        android:layout_height="218dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <ImageButton
+        android:id="@+id/kembali"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/selanjutnya"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignTop="@+id/cobalagi"
+        android:layout_toEndOf="@+id/vbenar"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_media_next"
+        android:tint="@android:color/darker_gray" />
+
+    <ImageButton
+        android:id="@+id/cobalagi"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="236dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_rotate"
+        android:tint="@android:color/background_dark" />
+
+    <ImageButton
+        android:id="@+id/sebelumnya"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignTop="@+id/selanjutnya"
+        android:layout_toStartOf="@+id/vbenar"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_media_previous"
+        android:tint="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/isi"
+        android:layout_width="260dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="186dp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/isi2"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/isi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-186dp"
+        android:textColor="@android:color/background_dark" />
+
+
+    <TextView
+        android:id="@+id/vbenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:text="Jumlah Benar : 0/"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/selanjutnya"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:text="abab"
+        android:textColor="@android:color/holo_red_dark" />
+
+</RelativeLayout>
